@@ -32,6 +32,9 @@
     emailjs.init({ publicKey: EMAILJS_CONFIG.publicKey });
   }
 
+  // قفل مؤقت أثناء صيانة خدمة البريد — الفورم يفضل ظاهر لكن مش بيبعت
+  const FORM_LIVE = false;
+
   const tabs = [...document.querySelectorAll('[role="tab"]')];
   const status = document.getElementById('form-status');
   function chooseRole(role, focusTab = false) {
@@ -72,6 +75,11 @@
     form.addEventListener('submit', async event => {
       event.preventDefault();
       if (!form.reportValidity()) return;
+      if (!FORM_LIVE) {
+        status.textContent = 'التسجيل متوقف مؤقتًا أثناء الصيانة — جرّب كمان شوية. بياناتك لسه عندك ومبعتناش حاجة.';
+        status.hidden = false;
+        return;
+      }
       const button = form.querySelector('button[type="submit"]');
       const original = button.innerHTML;
       button.disabled = true;
