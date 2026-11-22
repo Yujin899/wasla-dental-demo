@@ -14,8 +14,8 @@
 <h1>سجّل اهتمامك في صلة</h1>
 <p class="sub">صلة مشروع قيد التجهيز: نربط المريض المحتاج إلى علاج أسنان مجاني بطالب أسنان يحتاج إلى حالة تدريبية، ونبدأ في طنطا. سجّل اهتمامك دون اسم أو رقم هاتف؛ الهدف فقط قياس عدد المهتمين بالفكرة.</p>
 <div class="form-card"><div class="tabs" role="tablist" aria-label="نوع التسجيل"><button type="button" class="tab active" role="tab" id="patient-tab" aria-controls="patient-panel" aria-selected="true" tabindex="0">أحتاج إلى علاج</button><button type="button" class="tab" role="tab" id="student-tab" aria-controls="student-panel" aria-selected="false" tabindex="-1">طالب أسنان</button></div>
-<div role="tabpanel" id="patient-panel" aria-labelledby="patient-tab"><form id="patient-form"><label for="patient-area">المنطقة (اختياري)<input id="patient-area" name="area" autocomplete="address-level2" maxlength="80" placeholder="مثال: طنطا"></label><p class="field-note">لا نطلب اسمًا أو رقم هاتف أو أي بيانات تواصل؛ المشاركة لأغراض الإحصاء فقط.</p><button class="button primary submit" type="submit">تسجيل الاهتمام كمريض <span aria-hidden="true">↗</span></button></form></div>
-<div role="tabpanel" id="student-panel" aria-labelledby="student-tab" hidden><form id="student-form"><label for="student-area">المنطقة (اختياري)<input id="student-area" name="area" autocomplete="address-level2" maxlength="80" placeholder="مثال: طنطا"></label><p class="field-note">لا نطلب اسمًا أو رقم هاتف أو أي بيانات تواصل؛ المشاركة لأغراض الإحصاء فقط.</p><button class="button primary submit" type="submit">تسجيل الاهتمام كطالب <span aria-hidden="true">↗</span></button></form></div>
+<div role="tabpanel" id="patient-panel" aria-labelledby="patient-tab"><form id="patient-form"><label for="case-type">ما الذي تحتاجه؟<select id="case-type" name="case" required><option value="">اختر نوع الخدمة</option><option>كشف</option><option>تنظيف</option><option>حشو</option><option>حشو عصب</option></select></label><label for="patient-area">المنطقة (اختياري)<input id="patient-area" name="area" autocomplete="address-level2" maxlength="80" placeholder="مثال: طنطا"></label><p class="field-note">لا نطلب اسمًا أو رقم هاتف أو أي بيانات تواصل؛ المشاركة لأغراض الإحصاء فقط.</p><button class="button primary submit" type="submit">تسجيل الاهتمام كمريض <span aria-hidden="true">↗</span></button></form></div>
+<div role="tabpanel" id="student-panel" aria-labelledby="student-tab" hidden><form id="student-form"><label for="college">الكلية<input id="college" name="college" autocomplete="off" required maxlength="100" placeholder="مثال: طب الأسنان"></label><label for="student-year">السنة الدراسية<select id="student-year" name="year" required><option value="">اختر سنتك</option><option>الأولى</option><option>الثانية</option><option>الثالثة</option><option>الرابعة</option><option>الخامسة</option><option>الامتياز</option></select></label><label for="student-cases">الحالات التي تحتاجها<input id="student-cases" name="cases" autocomplete="off" required maxlength="150" placeholder="مثال: حشو، علاج عصب، تركيبات"></label><label for="student-area">المنطقة (اختياري)<input id="student-area" name="area" autocomplete="address-level2" maxlength="80" placeholder="مثال: طنطا"></label><p class="field-note">لا نطلب اسمًا أو رقم هاتف أو أي بيانات تواصل؛ المشاركة لأغراض الإحصاء فقط.</p><button class="button primary submit" type="submit">تسجيل الاهتمام كطالب <span aria-hidden="true">↗</span></button></form></div>
 <p id="form-status" class="status" role="status" aria-live="polite" hidden></p><p class="prelaunch">صلة قيد التجهيز. المشاركة هنا دون اسم أو رقم، وتعني الاهتمام بالفكرة فقط؛ ليست حجزًا ولا طلب تواصل.</p></div>
 </main>
 <footer class="footer">صلة · مشروع قيد التجربة في طنطا · ليست جهة علاجية ولا خدمة طوارئ · <a href="terms.html" style="color:var(--green);font-weight:700">شروط الاستخدام</a> · <a href="privacy.html" style="color:var(--green);font-weight:700">سياسة الخصوصية</a></footer>
@@ -61,6 +61,10 @@
   });
 
   const FIELD_LABELS = {
+    case: 'الخدمة المطلوبة',
+    college: 'الكلية',
+    year: 'السنة الدراسية',
+    cases: 'الحالات المطلوبة',
     area: 'المنطقة',
   };
 
