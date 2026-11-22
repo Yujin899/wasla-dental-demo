@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="صلة: سجّل اهتمامك — علاج أسنان مجاني للمريض وحالات تدريبية للطالب، جوّه الكلية وتحت إشراف أعضاء هيئة التدريس.">
+<meta name="theme-color" content="#175c4d"><title>صلة | سجّل اهتمامك</title>
+<style>@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{--ink:#193c34;--muted:#62726b;--green:#175c4d;--lime:#e9efbd;--cream:#faf9f4;--line:#dfe6dd;--white:#fff;--radius:22px}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.85;min-height:100vh;display:flex;flex-direction:column}button,input,select{font:inherit}button,a,input,select{-webkit-tap-highlight-color:transparent}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #bb8143;outline-offset:4px}button{cursor:pointer}.wrap{width:min(560px,calc(100% - 48px));margin-inline:auto;flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:28px}.brand{display:flex;align-items:center;justify-content:center;gap:10px;font-size:25px;font-weight:900;letter-spacing:-1.5px;color:var(--ink);text-decoration:none;margin-bottom:20px}.brand-icon{display:grid;place-items:center;background:var(--green);color:var(--lime);width:37px;height:37px;border-radius:13px;font-size:28px;line-height:1}h1,p{margin:0}h1{font-size:27px;line-height:1.6;font-weight:900;letter-spacing:-0.8px;text-align:center}.sub{font-size:13px;line-height:2;color:var(--muted);text-align:center;margin-block:6px 22px}.form-card{padding:24px;background:white;border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 16px 45px #193c3406}.tabs{display:grid;grid-template-columns:1fr 1fr;padding:5px;background:#f2f4ed;border-radius:10px;gap:5px;margin-bottom:20px}.tab{border:0;background:transparent;color:var(--muted);font-weight:800;padding:10px;border-radius:7px;font-size:13px;min-height:44px}.tab.active{background:white;color:var(--green);box-shadow:0 2px 6px #193c3410}label{display:block;font-size:12px;font-weight:700;margin-bottom:13px}input,select{display:block;width:100%;min-width:0;padding:11px 13px;border:1px solid #dce2d8;border-radius:8px;background:#fff;color:var(--ink);font-size:12px;min-height:47px;margin-top:6px}input::placeholder{color:#859189}select{padding-inline-end:25px}.field-note{font-size:10px;color:var(--muted);margin-bottom:14px;line-height:1.9}.consent{display:flex;align-items:flex-start;gap:9px;font-size:11px;font-weight:500;color:var(--muted);line-height:1.9;margin-bottom:16px}.consent input{width:auto;min-height:0;margin:5px 0 0;flex:none}.consent input:focus-visible{outline-offset:2px}.button{min-height:50px;padding:11px 24px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;gap:22px;font-size:13px;font-weight:800;border:1px solid transparent;transition:background .2s,transform .2s}.button:hover{transform:translateY(-2px)}.primary{background:var(--green);color:white}.primary:hover{background:#104536}.submit{width:100%;justify-content:space-between}.status{font-size:12px;padding:13px;border:1px solid #cad9c3;border-radius:8px;background:#f0f5e9;margin-top:14px}.status.error{border-color:#e5b3a9;background:#fbeeea;color:#8c3a2b}.prelaunch{font-size:10px;color:var(--muted);text-align:center;line-height:1.9;margin-top:16px}.footer{text-align:center;font-size:9px;color:var(--muted);padding-block:14px 20px}[hidden]{display:none!important}@media(max-width:650px){.wrap{width:calc(100% - 36px);padding-block:20px;justify-content:flex-start}.brand{font-size:22px;margin-bottom:14px}.brand-icon{width:33px;height:33px;font-size:25px;border-radius:11px}h1{font-size:23px}.sub{font-size:11px;margin-block:4px 16px}.form-card{padding:18px;border-radius:18px}}@media(prefers-reduced-motion:reduce){.button{transition:none}.button:hover{transform:none}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<a class="brand" href="#" aria-label="صلة، الرئيسية"><span class="brand-icon" aria-hidden="true">ص</span>صلة</a>
+<h1>سجّل اهتمامك في صلة</h1>
+<p class="sub">علاج أسنان مجاني للمريض، وحالات تدريبية للطالب — جوّه الكلية وتحت إشراف أعضاء هيئة التدريس. بنبدأ في طنطا.</p>
+<div class="form-card"><div class="tabs" role="tablist" aria-label="نوع التسجيل"><button type="button" class="tab active" role="tab" id="patient-tab" aria-controls="patient-panel" aria-selected="true" tabindex="0">محتاج علاج</button><button type="button" class="tab" role="tab" id="student-tab" aria-controls="student-panel" aria-selected="false" tabindex="-1">طالب أسنان</button></div>
+<div role="tabpanel" id="patient-panel" aria-labelledby="patient-tab"><form id="patient-form"><label for="patient-name">اسمك<input id="patient-name" name="name" autocomplete="name" required maxlength="80" placeholder="مثال: أحمد محمد"></label><label for="patient-phone">رقم الموبايل (واتساب)<input dir="ltr" id="patient-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required pattern="0(10|11|12|15)[0-9]{8}" title="رقم موبايل مصري من 11 رقم، يبدأ بـ 010 أو 011 أو 012 أو 015" placeholder="01000000000"></label><label for="patient-area">منطقتك<input id="patient-area" name="area" autocomplete="address-level2" required maxlength="80" placeholder="مثال: طنطا"></label><label for="case-type">محتاج مساعدة في إيه؟<select id="case-type" name="case" required><option value="">اختار احتياجك بشكل عام</option><option>كشف وتقييم</option><option>حشو أسنان</option><option>تنظيف الأسنان (جير)</option><option>علاج عصب</option><option>تركيبات أو طقم</option><option>خلع أو مشكلة تانية</option></select></label><p class="field-note">ده وصف مبدئي، مش تشخيص طبي. متحطش صور أو تقارير طبية هنا.</p><label class="consent" for="patient-consent"><input id="patient-consent" name="consent" type="checkbox" required><span>موافق إن فريق صلة يتواصل معايا على الرقم ده لما الخدمة تبدأ، وإن بياناتي تتستخدم للغرض ده بس.</span></label><button class="button primary submit" type="submit">سجّل كمريض <span aria-hidden="true">↗</span></button></form></div>
+<div role="tabpanel" id="student-panel" aria-labelledby="student-tab" hidden><form id="student-form"><label for="student-name">اسمك<input id="student-name" name="name" autocomplete="name" required maxlength="80" placeholder="مثال: سارة أحمد"></label><label for="student-phone">رقم الموبايل (واتساب)<input dir="ltr" id="student-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required pattern="0(10|11|12|15)[0-9]{8}" title="رقم موبايل مصري من 11 رقم، يبدأ بـ 010 أو 011 أو 012 أو 015" placeholder="01000000000"></label><label for="student-year">السنة الدراسية<select id="student-year" name="year" required><option value="">اختار سنتك</option><option>الأولى</option><option>الثانية</option><option>الثالثة</option><option>الرابعة</option><option>الخامسة</option><option>الامتياز</option></select></label><label for="university">الجامعة<input id="university" name="university" autocomplete="off" required maxlength="100" placeholder="اكتب اسم جامعتك"></label><label for="student-cases">إيه نوع الحالات اللي بتحتاجها؟<input id="student-cases" name="cases" autocomplete="off" maxlength="150" placeholder="اختياري: مثال: حشو، علاج عصب، تركيبات"></label><p class="field-note">قبول الحالات وتحديد العلاج مسؤولية الكلية والمشرفين.</p><label class="consent" for="student-consent"><input id="student-consent" name="consent" type="checkbox" required><span>موافق إن فريق صلة يتواصل معايا على الرقم ده لما الخدمة تبدأ، وإن بياناتي تتستخدم للغرض ده بس.</span></label><button class="button primary submit" type="submit">سجّل كطالب <span aria-hidden="true">↗</span></button></form></div>
+<p id="form-status" class="status" role="status" aria-live="polite" hidden></p><p class="prelaunch">صلة لسه تحت التجهيز. التسجيل هنا معناه إنك مهتم وموافق نتواصل معاك، مش حجز علاج ولا وعد بقبول الحالة. القرار النهائي دايمًا للكلية والمشرفين.</p></div>
+</main>
+<footer class="footer">صلة · فكرة قيد التجربة في طنطا · مش جهة علاجية ولا خدمة طوارئ</footer>
+<script>'use strict';
+(() => {
+  const FORM_ENDPOINT = '';
+
+  const tabs = [...document.querySelectorAll('[role="tab"]')];
+  const status = document.getElementById('form-status');
+  function chooseRole(role, focusTab = false) {
+    tabs.forEach(tab => {
+      const selected = tab.id === `${role}-tab`;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+      tab.classList.toggle('active', selected);
+      document.getElementById(tab.getAttribute('aria-controls')).hidden = !selected;
+      if (selected && focusTab) tab.focus();
+    });
+    status.hidden = true;
+    status.textContent = '';
+    status.classList.remove('error');
+  }
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => chooseRole(tab.id.split('-')[0]));
+    tab.addEventListener('keydown', event => {
+      if (['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) {
+        event.preventDefault();
+        const index = ['Home', 'End'].includes(event.key) ? (event.key === 'Home' ? 0 : 1) : (tabs.indexOf(tab) + (event.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+        chooseRole(tabs[index].id.split('-')[0], true);
+      }
+    });
+  });
+  document.querySelectorAll('form').forEach(form => {
+    form.addEventListener('submit', async event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      status.classList.remove('error');
+      if (!FORM_ENDPOINT) {
+        status.textContent = 'شكرًا لاهتمامك ✓ النسخة دي معاينة لسه، فبياناتك مش بتتبعت دلوقتي. أول ما التسجيل يتفعّل هنكون جاهزين.';
+        status.hidden = false;
+        form.reset();
+        return;
+      }
+      try {
+        const data = new FormData(form);
+        data.append('form', form.id);
+        const response = await fetch(FORM_ENDPOINT, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+        if (!response.ok) throw new Error('submit failed');
+        status.textContent = 'تمام، وصلنا ✓ هنتواصل معاك أول ما صلة تبدأ في منطقتك.';
+        status.hidden = false;
+        form.reset();
+      } catch (error) {
+        status.textContent = 'حصلت مشكلة في الإرسال. جرّب تاني كمان شوية.';
+        status.classList.add('error');
+        status.hidden = false;
+      }
+    });
+  });
+})();
+</script></body></html>
